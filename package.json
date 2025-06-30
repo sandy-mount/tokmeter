@@ -1,0 +1,57 @@
+{
+  "name": "tokmeter",
+  "version": "0.1.0",
+  "description": "🔢 Ultra-fast token counter for files and text - supports GPT models, Claude, and more!",
+  "keywords": [
+    "tokenizer",
+    "token-counter",
+    "tokens",
+    "gpt",
+    "openai",
+    "claude",
+    "llm",
+    "ai",
+    "cli",
+    "utility",
+    "bpe",
+    "simple",
+    "fast",
+    "beautiful",
+    "cost-estimation",
+    "developer-tools"
+  ],
+  "author": "Sandy Mount",
+  "license": "MIT",
+  "homepage": "https://github.com/sandy-mount/tokmeter#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandy-mount/tokmeter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sandy-mount/tokmeter/issues"
+  },
+  "main": "lib/index.js",
+  "bin": {
+    "tokmeter": "./bin/tokmeter.js"
+  },
+  "files": [
+    "bin/",
+    "lib/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node test/test.js",
+    "start": "node bin/tokmeter.js",
+    "prepublishOnly": "npm test"
+  },
+  "dependencies": {
+    "gpt-tokenizer": "^2.6.1",
+    "glob": "^10.3.10",
+    "commander": "^11.1.0",
+    "chalk": "^4.1.2"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
